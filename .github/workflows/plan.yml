@@ -1,4 +1,4 @@
-name: deploy
+name: plan
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  plan:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
