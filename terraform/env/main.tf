@@ -18,4 +18,6 @@ module "common" {
 }
 
 
-variable "CLOUDFLARE_API_TOKEN" {}
+variable "CLOUDFLARE_API_TOKEN" {
+  sensitive = true
+}
