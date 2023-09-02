@@ -1,0 +1,15 @@
+{
+  "name": "my-test-worker-01",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "prettier --check src",
+    "format": "prettier -w src",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.0.4"
+  }
+}
