@@ -1,7 +1,7 @@
 resource "cloudflare_access_identity_provider" "auth0" {
   name = "auth0"
   type = "oidc"
-  account_id = data.cloudflare_accounts.current.id
+  account_id = local.account_id
 
   config {
     client_id = "Ghx3kMR7xeW7GDJwgL0LftJDDwgMKyEB"
