@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "cloudflare" {
-  api_token = var.CLOUDFLARE_API_TOKEN
+  api_key = var.CLOUDFLARE_API_TOKEN
 }
 
 module "common" {
