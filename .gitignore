@@ -134,3 +134,4 @@ terraform.rc
 ## custom
 node_modules/
 /dist/
+.terraform.lock.hcl
