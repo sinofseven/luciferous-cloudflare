@@ -10,8 +10,8 @@ terraform {
 }
 
 provider "cloudflare" {
-  api_key = var.CLOUDFLARE_API_TOKEN
-  email = var.CLOUDFLARE_EMAIL
+  api_token = var.CLOUDFLARE_API_TOKEN
+  api_client_logging = true
 }
 
 module "common" {

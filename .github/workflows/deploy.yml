@@ -19,7 +19,6 @@ jobs:
         env:
           TF_VAR_CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           TF_VAR_CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
-          TF_LOG_PROVIDER: TRACE
         run: |
           terraform init
           terraform apply -auto-approve -no-color
