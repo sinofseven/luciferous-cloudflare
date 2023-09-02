@@ -21,6 +21,7 @@ jobs:
         working-directory: terraform/env
         env:
           TF_VAR_CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          TF_VAR_CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
         run: |
           terraform init
           terraform plan

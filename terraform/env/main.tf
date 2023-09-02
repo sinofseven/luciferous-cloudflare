@@ -11,6 +11,7 @@ terraform {
 
 provider "cloudflare" {
   api_key = var.CLOUDFLARE_API_TOKEN
+  email = var.CLOUDFLARE_EMAIL
 }
 
 module "common" {
@@ -19,5 +20,9 @@ module "common" {
 
 
 variable "CLOUDFLARE_API_TOKEN" {
+  sensitive = true
+}
+
+variable "CLOUDFLARE_EMAIL" {
   sensitive = true
 }
