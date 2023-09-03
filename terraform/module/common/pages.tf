@@ -18,6 +18,9 @@ resource "cloudflare_pages_project" "ryza" {
     }
   }
   deployment_configs {
-    production {}
+    production {
+      compatibility_date = "2023-08-21"
+      usage_model = "bundled"
+    }
   }
 }
