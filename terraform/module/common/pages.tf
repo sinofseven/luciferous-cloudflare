@@ -17,4 +17,7 @@ resource "cloudflare_pages_project" "ryza" {
       deployments_enabled = true
     }
   }
+  deployment_configs {
+    production {}
+  }
 }
