@@ -1,6 +1,14 @@
 terraform {
   required_version = "1.5.4"
 
+  backend "remote" {
+    organization = "luciferous-cloudflare"
+
+    workspaces {
+      name = "luciferous-cloudflare"
+    }
+  }
+
   required_providers {
     cloudflare = {
       source = "cloudflare/cloudflare"
